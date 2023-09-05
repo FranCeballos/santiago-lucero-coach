@@ -25,10 +25,17 @@ body {
 }
 
 h1 {
+  font-size: 1.9rem;
   font-variation-settings: "wght" 300;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
 }

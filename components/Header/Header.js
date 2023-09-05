@@ -1,18 +1,37 @@
 import React from "react";
 import classes from "./Header.module.css";
-import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+
+const logoVariant = {
+  hide: {
+    y: "-100px",
+  },
+  show: { y: 0 },
+};
 
 const Header = ({ className }) => {
   return (
     <header className={`${classes.container} ${className}`}>
       <div className={classes.logo__container}>
-        <Image
+        <motion.img
+          variants={logoVariant}
+          initial="hide"
+          animate="show"
+          transition={{ delay: 3, duration: 2, type: "spring" }}
           src="/assets/img/logo/logoclear.png"
-          width={35}
-          height={35}
+          width={30}
+          height={30}
           alt="logo"
         />
-        <p className={classes["logo__text"]}>Santi Lucero Coach</p>
+        <motion.p
+          variants={logoVariant}
+          initial="hide"
+          animate="show"
+          transition={{ delay: 3, duration: 2.5, type: "spring" }}
+          className={classes["logo__text"]}
+        >
+          Santi Lucero Coach
+        </motion.p>
       </div>
     </header>
   );

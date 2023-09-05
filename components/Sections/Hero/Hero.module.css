@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 8vw;
+}
+
+.title {
+  width: 100%;
+  text-align: start;
+  font-variation-settings: "wght" 800;
+}
+
+.title-gradient {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  font-size: 1.9rem;
+  font-variation-settings: "wght" 800;
+  background: -webkit-linear-gradient(
+    0deg,
+    #be22ff 20%,
+    #ff279c 50%,
+    #ff981f 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .title-gradient {
+    font-size: 3rem;
+  }
+}
