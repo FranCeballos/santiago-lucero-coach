@@ -1,11 +1,10 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
+  --main-text-color: #ffffff;
+  --main-dark-bg-color: #000000;
+  --main-dark-bg-color-75: rgba(0, 0, 0, 0.75);
 }
 
 * {
@@ -21,15 +20,15 @@ body {
 }
 
 body {
+  color: var(--main-text-color);
+  background-color: var(--main-dark-bg-color);
+}
+
+h1 {
+  font-variation-settings: "wght" 300;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
