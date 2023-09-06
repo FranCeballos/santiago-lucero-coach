@@ -17,7 +17,7 @@ const Header = ({ className }) => {
           variants={logoVariant}
           initial="hide"
           animate="show"
-          transition={{ delay: 3, duration: 2, type: "spring" }}
+          transition={{ duration: 2, type: "spring" }}
           src="/assets/img/logo/logoclear.png"
           width={30}
           height={30}
@@ -27,7 +27,7 @@ const Header = ({ className }) => {
           variants={logoVariant}
           initial="hide"
           animate="show"
-          transition={{ delay: 3, duration: 2.5, type: "spring" }}
+          transition={{ duration: 2.5, type: "spring" }}
           className={classes["logo__text"]}
         >
           Santi Lucero Coach

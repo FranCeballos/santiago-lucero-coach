@@ -1,0 +1,24 @@
+.video-container {
+  height: auto;
+  width: 100%;
+}
+
+.video {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .video {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+  }
+}
