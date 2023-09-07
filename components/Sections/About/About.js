@@ -24,7 +24,9 @@ const About = (props) => {
               target={containerRef}
               offset={["0 0.9", "1 1"]}
             >
-              <h2>¡Hola! Mi nombre es Santiago Lucero.</h2>
+              <h2 className={classes.title}>
+                ¡Hola! Mi nombre es Santiago Lucero.
+              </h2>
             </SlideOnScroll>
           </div>
           <div ref={descriptionRef}>
