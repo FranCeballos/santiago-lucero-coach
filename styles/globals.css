@@ -4,6 +4,7 @@
 
   --main-text-color: #ffffff;
   --secondary-text-color: #a1a1a6;
+  --secondary-text-color-2: #6e6e73;
   --main-dark-bg-color: #000000;
   --main-dark-bg-color-75: rgba(0, 0, 0, 0.75);
 
@@ -45,6 +46,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 
 a {

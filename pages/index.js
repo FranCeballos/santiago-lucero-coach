@@ -4,6 +4,7 @@ import Hero from "@/components/Sections/Hero/Hero";
 import About from "@/components/Sections/About/About";
 
 import { Inter } from "next/font/google";
+import Benefits from "@/components/Sections/Benefits/Benefits";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       <main className={`${inter.className}`}>
         <Hero />
         <About />
+        <Benefits />
       </main>
     </>
   );
