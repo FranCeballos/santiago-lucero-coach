@@ -18,7 +18,7 @@ const SlideOnScroll = ({
       [0, 1],
       [fromLeft ? -screenWidth : screenWidth, 0]
     ),
-    { stiffness: 80 }
+    { stiffness: 50, bounce: 0.1 }
   );
   return <motion.div style={{ x }}>{children}</motion.div>;
 };

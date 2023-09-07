@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import useDimension from "@/hooks/useDimension";
 import SectionWrapper from "@/components/UI/SectionWrapper";
 import Exercise1 from "@/components/UI/Videos/Exercise1";
+
 import SlideOnScroll from "@/components/UI/AnimatedComponents/SlideOnScroll";
 import classes from "./About.module.css";
 

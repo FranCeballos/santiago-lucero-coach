@@ -19,8 +19,8 @@ const Header = ({ className }) => {
           animate="show"
           transition={{ duration: 2, type: "spring" }}
           src="/assets/img/logo/logoclear.png"
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           alt="logo"
         />
         <motion.p
@@ -30,7 +30,7 @@ const Header = ({ className }) => {
           transition={{ duration: 2.5, type: "spring" }}
           className={classes["logo__text"]}
         >
-          Santi Lucero Coach
+          Santiago Lucero Coach
         </motion.p>
       </div>
     </header>
