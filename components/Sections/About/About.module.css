@@ -1,5 +1,14 @@
-.title {
-  font-size: 2rem;
+.content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  padding: 0;
 }
 
 .description {
@@ -7,6 +16,7 @@
   color: var(--secondary-text-color);
   font-size: 1.8rem;
   font-variation-settings: "wght" 700;
+  margin-bottom: 20px;
 }
 
 .description__gradient1 {
@@ -15,4 +25,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 769px) {
+  .content-container {
+    flex-direction: row;
+  }
+
+  .text-container {
+    padding: 0 80px 0 0;
+  }
 }

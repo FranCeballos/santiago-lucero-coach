@@ -4,14 +4,11 @@ import { motion } from "framer-motion";
 
 import classes from "./Exercise1.module.css";
 
-const Exercise1 = ({ y }) => {
+const Exercise1 = ({ y = 0, x = 0 }) => {
   const { width } = useDimension();
   return (
     <motion.div
       style={{ y: width > 768 ? y : 0 }}
-      initial={{ x: "100vw" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 2, delay: 3, type: "spring" }}
       className={classes["video-container"]}
     >
       <video
@@ -22,7 +19,7 @@ const Exercise1 = ({ y }) => {
         loop
         playsInline
       >
-        <source src="/assets/videos/mainhero.mp4" type="video/mp4" />
+        <source src="/assets/videos/exercise1.mp4" type="video/mp4" />
       </video>
     </motion.div>
   );
