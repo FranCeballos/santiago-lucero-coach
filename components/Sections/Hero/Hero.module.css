@@ -54,7 +54,8 @@
   flex-direction: row;
   font-size: 2.5rem;
   font-variation-settings: "wght" 800;
-  background: var(--gradient-green-yellow);
+  background: linear-gradient(var(--gradient-green-yellow));
+  background: -webkit-linear-gradient(var(--gradient-green-yellow));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

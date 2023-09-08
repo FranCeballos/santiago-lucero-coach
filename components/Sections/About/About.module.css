@@ -24,8 +24,8 @@
 }
 
 .description__gradient1 {
-  background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
-  background: -webkit-linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  background: linear-gradient(var(--gradient-blue));
+  background: -webkit-linear-gradient(var(--gradient-blue));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

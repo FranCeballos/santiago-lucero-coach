@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useScroll } from "framer-motion";
 import SectionWrapper from "@/components/UI/SectionWrapper";
 import classes from "./Benefits.module.css";
 import Information1 from "@/components/UI/Information/Information1";
@@ -9,10 +10,27 @@ import SettingIcon from "@/components/UI/Icons/SettingIcon";
 import FadeInOnScroll from "@/components/UI/AnimatedComponents/FadeInOnScroll";
 
 const Benefits = (props) => {
+  const offset = ["0 1", "0.7 0.7"];
   const ref1 = useRef();
+  const { scrollYProgress: scrollYEle1 } = useScroll({
+    target: ref1,
+    offset,
+  });
   const ref2 = useRef();
+  const { scrollYProgress: scrollYEle2 } = useScroll({
+    target: ref2,
+    offset,
+  });
   const ref3 = useRef();
+  const { scrollYProgress: scrollYEle3 } = useScroll({
+    target: ref3,
+    offset,
+  });
   const ref4 = useRef();
+  const { scrollYProgress: scrollYEle4 } = useScroll({
+    target: ref4,
+    offset,
+  });
   return (
     <SectionWrapper>
       <h2 className={classes.title}>
@@ -21,7 +39,7 @@ const Benefits = (props) => {
       </h2>
       <div className={classes["benefits-container"]}>
         <div ref={ref1}>
-          <FadeInOnScroll target={ref1} offset={["0 1", "0.7 0.7"]}>
+          <FadeInOnScroll scrollYProgress={scrollYEle1}>
             <Information1
               iconComponent={<FireIcon />}
               title="Plan de entrenamiento"
@@ -30,7 +48,7 @@ const Benefits = (props) => {
           </FadeInOnScroll>
         </div>
         <div ref={ref2}>
-          <FadeInOnScroll target={ref2} offset={["0 1", "0.7 0.7"]}>
+          <FadeInOnScroll scrollYProgress={scrollYEle2}>
             <Information1
               iconComponent={<HeartIcon />}
               title="Plan de nutrición"
@@ -39,7 +57,7 @@ const Benefits = (props) => {
           </FadeInOnScroll>
         </div>
         <div ref={ref3}>
-          <FadeInOnScroll target={ref3} offset={["0 1", "0.7 0.7"]}>
+          <FadeInOnScroll scrollYProgress={scrollYEle3}>
             <Information1
               iconComponent={<BookIcon />}
               title="Libro de recetas"
@@ -48,7 +66,7 @@ const Benefits = (props) => {
           </FadeInOnScroll>
         </div>
         <div ref={ref4}>
-          <FadeInOnScroll target={ref4} offset={["0 1", "0.7 0.7"]}>
+          <FadeInOnScroll scrollYProgress={scrollYEle4}>
             <Information1
               iconComponent={<SettingIcon />}
               title="Ajustes constantes"

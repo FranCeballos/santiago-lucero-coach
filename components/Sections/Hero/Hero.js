@@ -16,6 +16,7 @@ const textVariants = {
 
 const Hero = (props) => {
   const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
   const duration = 4;
 
   return (
@@ -33,7 +34,11 @@ const Hero = (props) => {
         </video>
       </div>
       <motion.div ref={ref} className={classes["title-container"]}>
-        <ParallaxOnScroll target={ref}>
+        <ParallaxOnScroll
+          scrollYProgress={scrollYProgress}
+          distance="30vh"
+          springOptions={{ stiffness: 450, bounce: 0.1, damping: 90 }}
+        >
           <motion.h1
             variants={textVariants}
             initial="hide"

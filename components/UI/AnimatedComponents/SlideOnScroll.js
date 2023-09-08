@@ -3,22 +3,18 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const SlideOnScroll = ({
   children,
-  target,
-  offset,
+  scrollYProgress,
   screenWidth,
+  springOptions = {},
   fromLeft = true,
 }) => {
-  const { scrollYProgress } = useScroll({
-    target,
-    offset,
-  });
   const x = useSpring(
     useTransform(
       scrollYProgress,
       [0, 1],
       [fromLeft ? -screenWidth : screenWidth, 0]
     ),
-    { stiffness: 50, bounce: 0.1 }
+    springOptions
   );
   return <motion.div style={{ x }}>{children}</motion.div>;
 };
