@@ -9,6 +9,8 @@
   --main-dark-bg-color-75: rgba(0, 0, 0, 0.75);
 
   /* Gradients */
+  --gradient-black-transparent-black: 0deg, rgb(0, 0, 0) 3%, transparent,
+    rgb(0, 0, 0) 98%;
   --gradient-purple-pink-orange: 0deg, #be22ff 20%, #ff279c 50%, #ff981f 80%;
   --gradient-green-yellow: 0deg, #85ffbd 0%, #fffb7d 100%;
   --gradient-orange: 90deg, #fad961 0%, #f76b1c 100%;
@@ -30,6 +32,11 @@ body {
 body {
   color: var(--main-text-color);
   background-color: var(--main-dark-bg-color);
+  position: relative;
+}
+
+main {
+  position: relative;
 }
 
 h1 {

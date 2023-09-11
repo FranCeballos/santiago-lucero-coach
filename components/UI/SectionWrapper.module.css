@@ -8,4 +8,5 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 100px 8vw;
+  position: relative;
 }
