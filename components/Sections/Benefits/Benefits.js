@@ -43,7 +43,7 @@ const Benefits = (props) => {
             <Information1
               iconComponent={<FireIcon />}
               title="Plan de entrenamiento"
-              description="Hipertrofia, estética, rendimiento, tanto para ¡principiantes, intermedios y avanzados!"
+              description="¿Hipertrofia, estética, rendimiento? Lo que quieras. Vos no debés adaptarte al plan, el plan se adapta a vos. No importa si recién comenzás o si ya llevás un camino."
             />
           </FadeInOnScroll>
         </div>
@@ -52,7 +52,7 @@ const Benefits = (props) => {
             <Information1
               iconComponent={<HeartIcon />}
               title="Plan de nutrición"
-              description="Complementa tu entrenamiento acorde a tus objetivos, ya sea perdida de grasa, aumento de masa muscular, mantener el peso u otros."
+              description="Complementá tu entrenamiento acorde a tus objetivos, ya sea pérdida de grasa, aumento de masa muscular, mantener el peso u otro que tengas."
             />
           </FadeInOnScroll>
         </div>
@@ -61,7 +61,7 @@ const Benefits = (props) => {
             <Information1
               iconComponent={<BookIcon />}
               title="Libro de recetas"
-              description="Para que puedas descubrir maneras ricas, sanas y diferentes de alimentarte, para lograr tus objetivos."
+              description="Descubrí formas ricas, sanas y diferentes de alimentarte. Sin ideas no te vas a quedar."
             />
           </FadeInOnScroll>
         </div>
@@ -70,7 +70,7 @@ const Benefits = (props) => {
             <Information1
               iconComponent={<SettingIcon />}
               title="Ajustes constantes"
-              description="Estoy disponible 24h para vos. Atender tus necesidades, preguntas, correcciones, planificación, dieta, evaluación de sensaciones y más. Sos mi prioridad."
+              description="Estoy disponible 24h para vos. Para atender tus necesidades y preguntas, con correcciones, planificación, dieta, evaluación de sensaciones y checkeos cada 15 días. Sos mi prioridad."
             />
           </FadeInOnScroll>
         </div>

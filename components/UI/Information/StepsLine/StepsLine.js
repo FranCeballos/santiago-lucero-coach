@@ -6,7 +6,7 @@ const StepsLine = ({ steps }) => {
   return (
     <div className={classes.container}>
       {steps.map((step, index) => (
-        <Step num={index + 1} title={step} />
+        <Step key={index} num={index + 1} title={step} />
       ))}
     </div>
   );

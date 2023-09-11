@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid var(--steps-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 100px;
+  height: auto;
+}
+
+.text {
+  font-variation-settings: "wght" 600;
+}

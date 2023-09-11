@@ -38,7 +38,8 @@ const About = (props) => {
               springOptions={springOptions}
             >
               <h2 className={classes.title}>
-                ¡Hola! Mi nombre es Santiago Lucero.
+                ¡Hola! Mi nombre es
+                <br /> Santiago Lucero.
               </h2>
             </SlideOnScroll>
           </div>
@@ -49,12 +50,13 @@ const About = (props) => {
               springOptions={springOptions}
             >
               <motion.p className={classes.description}>
-                Como personal trainer, mi meta es ayudarte a alcanzar{" "}
+                Como personal trainer, estoy para ayudarte a alcanzar{" "}
                 <span className={classes["description__gradient1"]}>
                   tus objetivos.
                 </span>
-                <br /> Estoy para acompañarte en este camino, en esta decision
-                de cambiar tu vida.
+                <br />
+                Para acompañarte en este camino, en esta decisión de cambiar tu
+                vida.
               </motion.p>
             </SlideOnScroll>
           </div>

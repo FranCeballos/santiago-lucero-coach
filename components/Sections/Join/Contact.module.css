@@ -1,0 +1,32 @@
+.container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__container {
+  width: 60px;
+}
+
+.text {
+  width: 100%;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 800;
+  padding: 0 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.whatsapp__link {
+  color: black;
+  background-color: var(--steps-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.whatsapp__text {
+  font-variation-settings: "wght" 700;
+}

@@ -15,7 +15,7 @@
 }
 
 .circle {
-  border: 4px solid #a8e063;
+  border: 4px solid var(--steps-color);
   border-radius: 50%;
   width: 60px;
   aspect-ratio: 1 /1;

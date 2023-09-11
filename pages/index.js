@@ -4,9 +4,9 @@ import Hero from "@/components/Sections/Hero/Hero";
 import About from "@/components/Sections/About/About";
 import Benefits from "@/components/Sections/Benefits/Benefits";
 import Join from "@/components/Sections/Join/Join";
+import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
 import { Inter } from "next/font/google";
-import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
 const inter = Inter({ subsets: ["latin"] });
 

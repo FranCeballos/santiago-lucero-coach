@@ -7,6 +7,9 @@
   --secondary-text-color-2: #6e6e73;
   --main-dark-bg-color: #000000;
   --main-dark-bg-color-75: rgba(0, 0, 0, 0.75);
+  --secondary-dark-bg-color: rgb(18, 20, 23);
+
+  --steps-color: #a8e063;
 
   /* Gradients */
   --gradient-black-transparent-black: 0deg, rgb(0, 0, 0) 3%, transparent,
