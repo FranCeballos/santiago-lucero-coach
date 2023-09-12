@@ -5,7 +5,7 @@
   background-size: cover;
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px 8vw 50px;
   margin: 0 auto 100px;
   position: relative;

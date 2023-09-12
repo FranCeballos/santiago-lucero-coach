@@ -11,18 +11,18 @@ const About = (props) => {
   const containerRef = useRef();
   const titleRef = useRef();
   const { scrollYProgress: scrollYTitle } = useScroll({
-    target: containerRef,
-    offset: ["0 0.9", "1 1"],
+    target: titleRef,
+    offset: ["0 0.9", "0.9 0.9"],
   });
   const descriptionRef = useRef();
   const { scrollYProgress: scrollYDescription } = useScroll({
-    target: containerRef,
-    offset: ["0 0.8", "1 1"],
+    target: titleRef,
+    offset: ["0 0.8", "0.8 0.8"],
   });
   const videoRef = useRef();
   const { scrollYProgress: scrollYVideo } = useScroll({
     target: containerRef,
-    offset: ["0 0.8", "1 1"],
+    offset: ["0 0.9", "1 1"],
   });
   const { width } = useDimension();
   const springOptions = { stiffness: 450, bounce: 0.1, damping: 90 };

@@ -76,7 +76,7 @@ const Collage1 = ({ font }) => {
       </div>
       <div className={classes.content7} ref={word7Ref}>
         <SlideBottomLine fromLeft={false} scrollYProgress={scrollYWord7}>
-          <p className={classes.word7}>GRAVEDAD</p>
+          <p className={classes.word7}>VELOCIDAD</p>
         </SlideBottomLine>
       </div>
     </div>
