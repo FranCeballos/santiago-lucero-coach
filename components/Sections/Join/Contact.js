@@ -15,7 +15,7 @@ const Contact = (props) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
         className={classes["whatsapp__link"]}
-        href="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20comenzar%20mi%20camino,%20y%20lograr%20mis%20sueños%20y%20objetivos%20físicos."
+        href="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20comenzar%20mi%20camino,%20lograr%20mis%20sueños%20y%20objetivos%20físicos."
         target="_blank"
       >
         <p className={classes["whatsapp__text"]}>Comenzá ya</p>

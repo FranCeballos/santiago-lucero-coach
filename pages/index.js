@@ -7,7 +7,6 @@ import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
 import { Inter, Montserrat } from "next/font/google";
-import Collage1 from "@/components/UI/backgroundImages/Collage1";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
@@ -29,7 +28,6 @@ export default function Home() {
         <About />
         <GymPicture1 />
         <Benefits />
-        <Collage1 font={montserrat.className} />
         <Join />
       </main>
     </>
