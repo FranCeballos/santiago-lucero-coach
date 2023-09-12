@@ -6,9 +6,15 @@ import Benefits from "@/components/Sections/Benefits/Benefits";
 import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
+import Collage1 from "@/components/UI/backgroundImages/Collage1";
 
 const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  style: "italic",
+  weight: "700",
+});
 
 export default function Home() {
   return (
@@ -18,11 +24,12 @@ export default function Home() {
         description="Entrenador Personal"
       />
       <Header className={inter.className} />
-      <main className={`${inter.className}`}>
+      <main className={inter.className}>
         <Hero />
         <About />
         <GymPicture1 />
         <Benefits />
+        <Collage1 font={montserrat.className} />
         <Join />
       </main>
     </>

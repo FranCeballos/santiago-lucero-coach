@@ -17,7 +17,7 @@ const Step = ({ title, num }) => {
   const contentRef = useRef();
   const { scrollYProgress: scrollYContent } = useScroll({
     target: contentRef,
-    offset: ["0 0.9", "1 1"],
+    offset: ["0 0.9", "0.9 0.9"],
   });
   const contentScaleSpring = useSpring(scrollYContent, springOptions);
 
@@ -38,7 +38,7 @@ const Step = ({ title, num }) => {
         <div className={classes.circle}>
           <p className={classes.number}>{num}</p>
         </div>
-        <h4 className={classes.title}>{title}</h4>
+        <h3 className={classes.title}>{title}</h3>
       </motion.div>
     </div>
   );

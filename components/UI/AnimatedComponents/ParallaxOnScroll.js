@@ -8,7 +8,7 @@ const useParallax = (value, distance) => {
 const ParallaxOnScroll = ({
   children,
   scrollYProgress = 0,
-  springOptions = { stiffness: 400, damping: 1000, bounce: 0.1 },
+  springOptions = { stiffness: 450, bounce: 0.1, damping: 90 },
   distance = "50vh",
 }) => {
   const springScroll = useSpring(scrollYProgress, springOptions);
