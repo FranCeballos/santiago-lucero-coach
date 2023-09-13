@@ -22,7 +22,7 @@
 
 .whatsapp__link {
   color: black;
-  background-color: var(--steps-color);
+  background-color: var(--main-green-color);
   border-radius: 10px;
   padding: 10px 20px;
 }
