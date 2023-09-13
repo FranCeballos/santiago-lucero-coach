@@ -16,8 +16,8 @@ const GymPicture1 = (props) => {
       <div className={classes.container} ref={ref}>
         <Image
           src="/assets/img/backgrounds/gym1.webp"
-          width={1920}
-          height={1280}
+          width={1536}
+          height={1024}
           className={classes.image}
           alt="gym accesories"
         />

@@ -30,7 +30,7 @@ const Hero = (props) => {
           loop
           playsInline
         >
-          <source src="/assets/videos/mainhero.mp4" type="video/mp4" />
+          <source src="/assets/videos/mainhero.webm" type="video/mp4" />
         </video>
       </div>
       <motion.div ref={ref} className={classes["title-container"]}>

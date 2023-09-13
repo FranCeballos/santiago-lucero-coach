@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./ServiceInfo.module.css";
+import Image from "next/image";
 
 const ServiceInfo = ({
   title,
@@ -10,11 +11,16 @@ const ServiceInfo = ({
   link,
   image,
 }) => {
-  console.log(itemsIcons);
   return (
     <div className={classes.container}>
       <div className={classes["image__container"]}>
-        <img src={image} className={classes.image} alt="Service image" />
+        <Image
+          src={image}
+          className={classes.image}
+          alt="Service image"
+          width={960}
+          height={640}
+        />
       </div>
       <div className={classes.content1}>
         <div className={classes.icon}>{icon}</div>
