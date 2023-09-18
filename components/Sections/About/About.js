@@ -29,7 +29,7 @@ const About = (props) => {
 
   return (
     <SectionWrapper>
-      <div className={classes["content-container"]}>
+      <div id="acerca" className={classes["content-container"]}>
         <div ref={containerRef} className={classes["text-container"]}>
           <div ref={titleRef}>
             <SlideOnScroll
@@ -61,7 +61,7 @@ const About = (props) => {
             </SlideOnScroll>
           </div>
         </div>
-        <div ref={videoRef}>
+        <div className={classes["video__container"]} ref={videoRef}>
           <SlideOnScroll
             screenWidth={width}
             scrollYProgress={scrollYVideo}

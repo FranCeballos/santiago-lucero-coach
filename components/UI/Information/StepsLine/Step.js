@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import classes from "./Step.module.css";
 
-const Step = ({ title, num }) => {
+const Step = ({ title, num, sup = "" }) => {
   const springOptions = { stiffness: 450, bounce: 0.1, damping: 90 };
 
   // Line scaleY
@@ -38,7 +38,10 @@ const Step = ({ title, num }) => {
         <div className={classes.circle}>
           <p className={classes.number}>{num}</p>
         </div>
-        <h3 className={classes.title}>{title}</h3>
+        <h3 className={classes.title}>
+          {title}
+          <sup className={classes.sup}>{sup}</sup>
+        </h3>
       </motion.div>
     </div>
   );

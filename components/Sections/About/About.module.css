@@ -31,6 +31,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.video__container {
+  max-width: 350px;
+}
+
 @media (min-width: 769px) {
   .content-container {
     flex-direction: row;

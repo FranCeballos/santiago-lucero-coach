@@ -17,9 +17,10 @@ const ServiceInfo = ({
         <Image
           src={image}
           className={classes.image}
+          quality={70}
           alt="Service image"
-          width={960}
-          height={640}
+          width={768}
+          height={512}
         />
       </div>
       <div className={classes.content1}>

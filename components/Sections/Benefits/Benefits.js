@@ -8,7 +8,7 @@ import classes from "./Benefits.module.css";
 const Benefits = (props) => {
   return (
     <SectionWrapper>
-      <h2 className={classes.title}>
+      <h2 id="beneficios" className={classes.title}>
         Tus beneficios. <br />
         Tu futuro.
       </h2>

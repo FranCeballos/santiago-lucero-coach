@@ -7,6 +7,7 @@ import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
 import { Inter, Montserrat } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <>
       <HeadComponent
-        title="Coach Santi Lucero"
+        title="Santiago Lucero Coach"
         description="Entrenador Personal"
       />
       <Header className={inter.className} />
@@ -29,6 +30,7 @@ export default function Home() {
         <GymPicture1 />
         <Benefits />
         <Join />
+        <Footer />
       </main>
     </>
   );

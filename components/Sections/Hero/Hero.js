@@ -21,7 +21,12 @@ const Hero = (props) => {
 
   return (
     <motion.section className={classes.container}>
-      <div className={classes["video-container"]}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 3, duration: 3 }}
+        className={classes["video-container"]}
+      >
         <video
           className={classes["video"]}
           poster="./assets/videos/mainhero-poster.jpeg"
@@ -30,9 +35,9 @@ const Hero = (props) => {
           loop
           playsInline
         >
-          <source src="/assets/videos/mainhero.webm" type="video/mp4" />
+          <source src="/assets/videos/mainhero.mp4" type="video/mp4" />
         </video>
-      </div>
+      </motion.div>
       <motion.div ref={ref} className={classes["title-container"]}>
         <ParallaxOnScroll
           scrollYProgress={scrollYProgress}

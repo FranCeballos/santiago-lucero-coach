@@ -9,7 +9,7 @@ import classes from "./Join.module.css";
 const Join = (props) => {
   return (
     <SectionWrapper style={{ padding: 0 }}>
-      <div className={classes["image__container"]}>
+      <div id="sumate" className={classes["image__container"]}>
         <div className={classes["title__container"]}>
           <h2 className={classes.title}>
             Sumate al team.
@@ -27,6 +27,7 @@ const Join = (props) => {
               "Enviá el comprobante de pago.",
               "Te envío el material y estoy para caminar junto a vos.",
             ]}
+            sup={["", "", "", "4"]}
           />
         </div>
         <div className={classes["special-info__container"]}>

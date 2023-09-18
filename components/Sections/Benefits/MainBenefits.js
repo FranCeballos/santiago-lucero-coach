@@ -38,6 +38,7 @@ const MainBenefits = (props) => {
         <FadeInOnScroll scrollYProgress={scrollYEle1}>
           <Information1
             iconComponent={<FireIcon />}
+            sup="1"
             title="Plan de entrenamiento"
             description="¿Hipertrofia, estética, rendimiento? Lo que quieras. Vos no debés adaptarte al plan, el plan se adapta a vos. No importa si recién comenzás o si ya llevás un camino."
           />
@@ -48,6 +49,7 @@ const MainBenefits = (props) => {
           <Information1
             iconComponent={<HeartIcon />}
             title="Plan de nutrición"
+            sup="2"
             description="Complementá tu entrenamiento acorde a tus objetivos, ya sea pérdida de grasa, aumento de masa muscular, mantener el peso u otro que tengas."
           />
         </FadeInOnScroll>
@@ -66,6 +68,7 @@ const MainBenefits = (props) => {
           <Information1
             iconComponent={<SettingIcon />}
             title="Ajustes constantes"
+            sup="3"
             description="Estoy disponible 24h para vos. Para atender tus necesidades y preguntas, con correcciones, planificación, dieta, evaluación de sensaciones y checkeos cada 15 días. Sos mi prioridad."
           />
         </FadeInOnScroll>
