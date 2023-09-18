@@ -7,7 +7,7 @@ import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 
 import { Inter, Montserrat } from "next/font/google";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Sections/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({

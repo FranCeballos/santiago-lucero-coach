@@ -45,7 +45,12 @@ const Footer = (props) => {
           </a>
         </div>
         <div className={classes["logo__container"]}>
-          <Image src="/assets/img/logo/logoclear.png" width={30} height={30} />
+          <Image
+            src="/assets/img/logo/logoclear.png"
+            width={30}
+            height={30}
+            alt="logo image"
+          />
           <p className={classes["logo__title"]}>Santiago Lucero Coach</p>
         </div>
       </div>
