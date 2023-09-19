@@ -43,6 +43,9 @@ const Footer = (props) => {
           <a className={classes.link} href="#sumate">
             Sumate al team
           </a>
+          <a className={classes.link} href="#seguime">
+            Seguime en las redes
+          </a>
         </div>
         <div className={classes["logo__container"]}>
           <Image

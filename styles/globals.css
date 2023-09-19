@@ -12,6 +12,8 @@
   --main-green-color: #bcfd49;
 
   /* Gradients */
+  --instagram-gradient: 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%,
+    #bc1888 100%;
   --gradient-black-transparent-black: 0deg, rgb(0, 0, 0) 3%, transparent,
     rgb(0, 0, 0) 98%;
   --gradient-purple-pink-orange: 0deg, #be22ff 20%, #ff279c 50%, #ff981f 80%;
