@@ -2,10 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    loader: "default",
     remotePatterns: [
       {
         protocol: "https",
         hostname: "scontent.cdninstagram.com",
+        port: "",
+        pathname: "/v/**",
       },
     ],
   },

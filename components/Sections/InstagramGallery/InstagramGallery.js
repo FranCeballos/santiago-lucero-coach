@@ -5,6 +5,8 @@ import Image from "next/image";
 import SlideOnScroll from "@/components/UI/AnimatedComponents/SlideOnScroll";
 import useDimension from "@/hooks/useDimension";
 import { useScroll, motion } from "framer-motion";
+import PlayIcon from "@/components/UI/Icons/PlayIcon";
+import RectangleStackIcon from "@/components/UI/Icons/RectangleStackIcon";
 
 const containerVariants = {
   hidden: {
@@ -48,6 +50,7 @@ const itemVariant = {
 
 const InstagramGallery = ({ postsData }) => {
   const limitedPosts = postsData.data.slice(0, 12);
+
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -55,6 +58,12 @@ const InstagramGallery = ({ postsData }) => {
   });
   const { width } = useDimension();
   const springOptions = { stiffness: 450, bounce: 0.1, damping: 90 };
+
+  const icons = {
+    VIDEO: <PlayIcon />,
+    CAROUSEL_ALBUM: <RectangleStackIcon />,
+  };
+
   return (
     <SectionWrapper>
       <h2 id="seguime" className={classes.title}>
@@ -105,19 +114,27 @@ const InstagramGallery = ({ postsData }) => {
             key={post.id}
             className={classes["post__container"]}
           >
-            <a href={post.permalink} target="_blank">
+            <a className="" href={post.permalink} target="_blank">
+              <div className={classes["icons__container"]}>
+                {icons[post.media_type]}
+              </div>
               <Image
                 className={classes.image}
-                src={post.thumbnail_url}
+                src={
+                  post.media_type === "VIDEO"
+                    ? post.thumbnail_url
+                    : post.media_url
+                }
                 width={300}
                 height={300}
+                // fill
+                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="post image"
               />
             </a>
           </motion.div>
         ))}
       </motion.div>
-      <div className={classes["icons__container"]}></div>
     </SectionWrapper>
   );
 };
