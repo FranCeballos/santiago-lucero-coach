@@ -5,19 +5,20 @@ import About from "@/components/Sections/About/About";
 import Benefits from "@/components/Sections/Benefits/Benefits";
 import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
-
-import { Inter, Montserrat } from "next/font/google";
 import Footer from "@/components/Sections/Footer/Footer";
 import InstagramGallery from "@/components/Sections/InstagramGallery/InstagramGallery";
 
+import { Inter } from "next/font/google";
+import NavBar from "@/components/Sections/NavBar/NavBar";
+import { useSelector } from "react-redux";
+import { useDisableBodyScroll } from "@/hooks/use-disable-body-scroll";
+import { AnimatePresence } from "framer-motion";
+
 const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  style: "italic",
-  weight: "700",
-});
 
 export default function Home({ instagramPostsData }) {
+  const { showNav } = useSelector((state) => state.nav);
+  useDisableBodyScroll(showNav);
   return (
     <>
       <HeadComponent
@@ -26,6 +27,7 @@ export default function Home({ instagramPostsData }) {
       />
       <Header className={inter.className} />
       <main className={inter.className}>
+        <AnimatePresence mode="wait">{showNav && <NavBar />}</AnimatePresence>
         <Hero />
         <About />
         <GymPicture1 />

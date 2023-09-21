@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./SectionWrapper.module.css";
 
-const SectionWrapper = ({ children, style }) => {
+const SectionWrapper = ({ children, style, id }) => {
   return (
-    <section style={style} className={classes.container}>
+    <section id={id} style={style} className={classes.container}>
       {children}
     </section>
   );

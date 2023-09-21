@@ -1,7 +1,11 @@
 import React from "react";
-import classes from "./Header.module.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+import classes from "./Header.module.css";
+import Bars2Icon from "../UI/Icons/Bars2Icon";
+import { toggleNav } from "@/store/nav-slice";
+import CrossIcon from "../UI/Icons/CrossIcon";
 
 const logoVariant = {
   hide: {
@@ -10,7 +14,30 @@ const logoVariant = {
   show: { y: 0 },
 };
 
+const navVariant = {
+  hide: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      opacity: {
+        duration: 0.3,
+      },
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      opacity: { duration: 0.3 },
+    },
+  },
+};
+
 const Header = ({ className }) => {
+  const dispatch = useDispatch();
+  const { showNav } = useSelector((state) => state.nav);
+
   return (
     <header className={`${classes.container} ${className}`}>
       <div className={classes.content}>
@@ -39,6 +66,35 @@ const Header = ({ className }) => {
           Santiago Lucero Coach
         </motion.p>
       </div>
+      <AnimatePresence mode="wait">
+        {showNav ? (
+          <motion.div
+            key="cross"
+            onClick={() => dispatch(toggleNav())}
+            variants={navVariant}
+            initial="hide"
+            animate="show"
+            exit="exit"
+            transition={{ duration: 0.5, type: "spring" }}
+            className={classes["nav__button"]}
+          >
+            <CrossIcon />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="bars"
+            onClick={() => dispatch(toggleNav())}
+            variants={navVariant}
+            initial="hide"
+            animate="show"
+            exit="exit"
+            transition={{ duration: 0.5, type: "spring" }}
+            className={classes["nav__button"]}
+          >
+            <Bars2Icon />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

@@ -35,7 +35,7 @@ const Footer = (props) => {
       <div className={classes["footer__grid"]}>
         <div className={classes.links}>
           <a className={classes.link} href="#acerca">
-            Acerca de mi
+            Acerca de mí
           </a>
           <a className={classes.link} href="#beneficios">
             Tus beneficios

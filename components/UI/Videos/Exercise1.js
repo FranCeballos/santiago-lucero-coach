@@ -1,5 +1,5 @@
 import React from "react";
-import useDimension from "@/hooks/useDimension";
+import useDimension from "@/hooks/use-dimension";
 import { motion } from "framer-motion";
 
 import classes from "./Exercise1.module.css";

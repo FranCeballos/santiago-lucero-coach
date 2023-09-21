@@ -3,7 +3,7 @@ import SectionWrapper from "@/components/UI/SectionWrapper";
 import classes from "./InstagramGallery.module.css";
 import Image from "next/image";
 import SlideOnScroll from "@/components/UI/AnimatedComponents/SlideOnScroll";
-import useDimension from "@/hooks/useDimension";
+import useDimension from "@/hooks/use-dimension";
 import { useScroll, motion } from "framer-motion";
 import PlayIcon from "@/components/UI/Icons/PlayIcon";
 import RectangleStackIcon from "@/components/UI/Icons/RectangleStackIcon";
@@ -65,8 +65,8 @@ const InstagramGallery = ({ postsData }) => {
   };
 
   return (
-    <SectionWrapper>
-      <h2 id="seguime" className={classes.title}>
+    <SectionWrapper id="seguime">
+      <h2 className={classes.title}>
         No te pierdas ningún consejo <br /> en mis redes.
       </h2>
       <div className={classes["instagram__title-container"]} ref={containerRef}>
@@ -127,8 +127,6 @@ const InstagramGallery = ({ postsData }) => {
                 }
                 width={300}
                 height={300}
-                // fill
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="post image"
               />
             </a>

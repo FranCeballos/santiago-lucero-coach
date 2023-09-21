@@ -8,8 +8,8 @@ import classes from "./Join.module.css";
 
 const Join = (props) => {
   return (
-    <SectionWrapper style={{ padding: 0 }}>
-      <div id="sumate" className={classes["image__container"]}>
+    <SectionWrapper id="sumate" style={{ padding: 0 }}>
+      <div className={classes["image__container"]}>
         <div className={classes["title__container"]}>
           <h2 className={classes.title}>
             Sumate al team.

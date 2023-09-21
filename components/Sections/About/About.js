@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import useDimension from "@/hooks/useDimension";
+import useDimension from "@/hooks/use-dimension";
 import SectionWrapper from "@/components/UI/SectionWrapper";
 import Exercise1 from "@/components/UI/Videos/Exercise1";
 
@@ -28,8 +28,8 @@ const About = (props) => {
   const springOptions = { stiffness: 450, bounce: 0.1, damping: 90 };
 
   return (
-    <SectionWrapper>
-      <div id="acerca" className={classes["content-container"]}>
+    <SectionWrapper id="acerca">
+      <div className={classes["content-container"]}>
         <div ref={containerRef} className={classes["text-container"]}>
           <div ref={titleRef}>
             <SlideOnScroll
