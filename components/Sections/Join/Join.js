@@ -12,7 +12,7 @@ const Join = (props) => {
       <div className={classes["image__container"]}>
         <div className={classes["title__container"]}>
           <h2 className={classes.title}>
-            Sumate al team.
+            Sumate.
             <br />
             Online o presencial.
           </h2>
@@ -22,7 +22,7 @@ const Join = (props) => {
         <div className={classes["steps__container"]}>
           <StepsLine
             steps={[
-              "Contactame. Comentame tus objetivos y qué plan querés seguir.",
+              "Contactame y compartime tus objetivos y qué plan querés seguir.",
               "Llená el formulario.",
               "Enviá el comprobante de pago.",
               "Te envío el material y estoy para caminar junto a vos.",

@@ -69,7 +69,7 @@ const MainBenefits = (props) => {
             iconComponent={<SettingIcon />}
             title="Ajustes constantes"
             sup="3"
-            description="Estoy disponible 24h para vos. Para atender tus necesidades y preguntas, con correcciones, planificación, dieta, evaluación de sensaciones y checkeos cada 15 días. Sos mi prioridad."
+            description="Estoy disponible para vos. Para atender tus necesidades y preguntas; con correcciones, planificación, dieta, evaluación de sensaciones y checkeos cada 15 días. Sos mi prioridad."
           />
         </FadeInOnScroll>
       </div>

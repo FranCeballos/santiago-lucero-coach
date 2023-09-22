@@ -40,7 +40,7 @@ const NavBar = (props) => {
             onClick={() => dispatch(toggleNav())}
             href="#sumate"
           >
-            Sumate al team
+            Sumate
           </a>
         </ScaleOnHover>
         <ScaleOnHover className={`${classes.link} ${classes.link4}`}>

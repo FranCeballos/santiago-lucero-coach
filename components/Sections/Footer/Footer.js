@@ -41,7 +41,7 @@ const Footer = (props) => {
             Tus beneficios
           </a>
           <a className={classes.link} href="#sumate">
-            Sumate al team
+            Sumate
           </a>
           <a className={classes.link} href="#seguime">
             Seguime en las redes
