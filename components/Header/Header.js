@@ -4,7 +4,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import classes from "./Header.module.css";
 import Bars2Icon from "../UI/Icons/Bars2Icon";
-import { toggleNav } from "@/store/nav-slice";
+import { hideModal, toggleNav, toggleVideo } from "@/store/modal-slice";
 import CrossIcon from "../UI/Icons/CrossIcon";
 
 const logoVariant = {
@@ -36,7 +36,7 @@ const navVariant = {
 
 const Header = ({ className }) => {
   const dispatch = useDispatch();
-  const { showNav } = useSelector((state) => state.nav);
+  const { showNav, showVideo } = useSelector((state) => state.modal);
 
   return (
     <header className={`${classes.container} ${className}`}>
@@ -67,10 +67,12 @@ const Header = ({ className }) => {
         </motion.p>
       </div>
       <AnimatePresence mode="wait">
-        {showNav ? (
+        {showNav || showVideo ? (
           <motion.div
             key="cross"
-            onClick={() => dispatch(toggleNav())}
+            onClick={() => {
+              dispatch(hideModal());
+            }}
             variants={navVariant}
             initial="hide"
             animate="show"

@@ -4,6 +4,7 @@ import MainBenefits from "./MainBenefits";
 import Plans from "./Plans";
 
 import classes from "./Benefits.module.css";
+import KnowMore from "./KnowMore";
 
 const Benefits = (props) => {
   return (
@@ -14,6 +15,7 @@ const Benefits = (props) => {
       </h2>
       <MainBenefits />
       <Plans />
+      <KnowMore />
     </SectionWrapper>
   );
 };

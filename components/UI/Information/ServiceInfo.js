@@ -17,7 +17,7 @@ const ServiceInfo = ({
         <Image
           src={image}
           className={classes.image}
-          quality={70}
+          quality={40}
           alt="Service image"
           width={768}
           height={512}

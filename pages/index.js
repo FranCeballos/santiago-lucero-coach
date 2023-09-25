@@ -7,18 +7,16 @@ import Join from "@/components/Sections/Join/Join";
 import GymPicture1 from "@/components/UI/backgroundImages/GymPicture1";
 import Footer from "@/components/Sections/Footer/Footer";
 import InstagramGallery from "@/components/Sections/InstagramGallery/InstagramGallery";
+import Modal from "@/components/Sections/Modal/Modal";
 
 import { Inter } from "next/font/google";
-import NavBar from "@/components/Sections/NavBar/NavBar";
 import { useSelector } from "react-redux";
-import { useDisableBodyScroll } from "@/hooks/use-disable-body-scroll";
 import { AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ instagramPostsData }) {
-  const { showNav } = useSelector((state) => state.nav);
-  useDisableBodyScroll(showNav);
+  const { showNav, showVideo } = useSelector((state) => state.modal);
   return (
     <>
       <HeadComponent
@@ -27,7 +25,9 @@ export default function Home({ instagramPostsData }) {
       />
       <Header className={inter.className} />
       <main className={inter.className}>
-        <AnimatePresence mode="wait">{showNav && <NavBar />}</AnimatePresence>
+        <AnimatePresence mode="wait">
+          {(showNav || showVideo) && <Modal />}
+        </AnimatePresence>
         <Hero />
         <About />
         <GymPicture1 />
