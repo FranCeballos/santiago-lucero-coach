@@ -127,6 +127,7 @@ const InstagramGallery = ({ postsData }) => {
                 }
                 width={300}
                 height={300}
+                unoptimized={true}
                 alt="post image"
               />
             </a>
