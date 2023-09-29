@@ -64,6 +64,12 @@
   font-variation-settings: "wght" 700;
 }
 
+.developer__link {
+  font-size: 0.9rem;
+  margin-top: 60px;
+  font-variation-settings: "wght" 700;
+}
+
 @media (min-width: 768px) {
   .logo__container {
     place-self: start;

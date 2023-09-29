@@ -56,6 +56,13 @@ const Footer = (props) => {
           />
           <p className={classes["logo__title"]}>Santiago Lucero Coach</p>
         </div>
+        <a
+          className={classes["developer__link"]}
+          href="https://franciscoceballos.dev"
+          target="_blank"
+        >
+          Diseñado y programado por Francisco Ceballos
+        </a>
       </div>
     </footer>
   );
