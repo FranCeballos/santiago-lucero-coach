@@ -45,9 +45,15 @@ export const getStaticProps = async (context) => {
     `https://graph.instagram.com/me/media?fields=id,permalink,thumbnail_url,media_type,media_url&access_token=${process.env.INSTAGRAM_TOKEN}`
   );
 
-  await fetch(
+  const refreshTokenResponse = await fetch(
     `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&&access_token=${process.env.INSTAGRAM_TOKEN}`
   );
+
+  if (refreshTokenResponse.status === 200) {
+    console.log("Access token refreshed");
+  } else {
+    console.log("Error on token refresh");
+  }
 
   const instagramPostsData = await res.json();
   return { props: { instagramPostsData }, revalidate: 60 };
