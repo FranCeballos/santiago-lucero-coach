@@ -44,6 +44,11 @@ export const getStaticProps = async (context) => {
   const res = await fetch(
     `https://graph.instagram.com/me/media?fields=id,permalink,thumbnail_url,media_type,media_url&access_token=${process.env.INSTAGRAM_TOKEN}`
   );
+
+  await fetch(
+    `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&&access_token=${process.env.INSTAGRAM_TOKEN}`
+  );
+
   const instagramPostsData = await res.json();
-  return { props: { instagramPostsData }, revalidate: 30 };
+  return { props: { instagramPostsData }, revalidate: 60 };
 };
