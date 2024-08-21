@@ -48,7 +48,7 @@ const Nav = (props) => {
         <a
           className={classes["fill"]}
           onClick={() => dispatch(toggleNav())}
-          href="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20comenzar%20mi%20camino,%20lograr%20mis%20sueños%20y%20objetivos%20físicos."
+          href="https://wa.me/5492612420196?text=Hola%20Santi!%20Quiero%20comenzar%20mi%20camino,%20lograr%20mis%20sueños%20y%20objetivos%20físicos."
           target="_blank"
         >
           Contactame

@@ -31,7 +31,7 @@ const Plans = (props) => {
           <MapPinIcon />,
         ]}
         linkText="Consultá precios"
-        link="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20del%20Plan%20Presencial."
+        link="https://wa.me/5492612420196?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20del%20Plan%20Presencial."
         image="/assets/img/backgrounds/gym4.webp"
       />
       <ServiceInfo
@@ -52,7 +52,7 @@ const Plans = (props) => {
           <GlobeAmericasIcon />,
         ]}
         linkText="Consultá precios"
-        link="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20del%20Plan%20Online."
+        link="https://wa.me/5492612420196?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20del%20Plan%20Online."
         image="/assets/img/backgrounds/gym5.webp"
       />
       <ServiceInfo
@@ -64,7 +64,7 @@ const Plans = (props) => {
         icon={<PaintBrushIcon />}
         itemsIcons={[<BookIcon />, <BeakerIcon />]}
         linkText="Consultá precios"
-        link="https://wa.me/5492615436947?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20de%20la%20Guia%20de%20Diseña%20tu %20Plan."
+        link="https://wa.me/5492612420196?text=Hola%20Santi!%20Quiero%20consultar%20los%20precios%20de%20la%20Guia%20de%20Diseña%20tu %20Plan."
         image="/assets/img/backgrounds/gym6.webp"
       />
     </div>
